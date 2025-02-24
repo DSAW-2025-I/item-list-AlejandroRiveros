@@ -16,9 +16,48 @@
       justify-content: center;
       align-items: center;
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     }
     .centered-content {
       text-align: center;
+      position: relative;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .centered-content:hover {
+      transform: scale(1.05);
+    }
+    .centered-content h1, .centered-content p {
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .centered-content h1 {
+      font-size: 5rem; 
+    }
+    .centered-content p {
+      font-size: 2.5rem; 
+    }
+    .tooltip-text {
+      visibility: hidden;
+      width: 300px;
+      background-color: rgb(255, 255, 255);
+      color: #000;
+      text-align: center;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; 
+      left: 50%;
+      margin-left: -150px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .centered-content:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1;
     }
   </style>
 </head>
@@ -26,6 +65,9 @@
   <div class="centered-content">
     <h1>Alejandro Riveros</h1>
     <p>ID: 0000320640</p>
+    <div class="tooltip-text">
+      Lectura Crítica: Felicidades, descubrió el verdadero parcial. Si llegó hasta acá mantenga la calma y no le diga a sus compañeros. El parcial consiste en desplegar una página index.html desde este repositorio con su nombre y su ID. 
+    </div>
   </div>
 
   <!-- Bootstrap JS -->
